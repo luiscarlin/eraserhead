@@ -1,0 +1,54 @@
+@import 'normalize.css';
+
+html {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 10px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+}
+
+body {
+  transition: all 0.7s ease-in-out;
+  background: white;
+
+  *:focus {
+    outline: none;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 7rem;
+    letter-spacing: 0.25rem;
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: normal;
+  }
+
+  input[type='text'] {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: normal;
+    border: 0;
+  }
+
+  a {
+    cursor: pointer;
+  }
+}
