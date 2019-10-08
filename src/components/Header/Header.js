@@ -1,9 +1,9 @@
 import React from 'react'
-import './navbar.scss'
+import './header.scss'
 
-function Navbar() {
+function Header() {
   return (
-    <header>
+    <header className="header">
       <a href="/">logo</a>
       <nav>
         <ul>
@@ -22,4 +22,4 @@ function Navbar() {
   )
 }
 
-export default Navbar
+export default Header
