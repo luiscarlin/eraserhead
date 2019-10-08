@@ -22,7 +22,6 @@ body,
 }
 
 body {
-  transition: all 0.7s ease-in-out;
   background: white;
 
   *:focus {
@@ -41,14 +40,19 @@ body {
     font-weight: normal;
   }
 
-  input[type='text'] {
-    margin: 0;
-    font-size: 1.6rem;
-    font-weight: normal;
-    border: 0;
-  }
-
   a {
     cursor: pointer;
+    font-size: 2.5rem;
+    &:active,
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 }

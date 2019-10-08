@@ -6,7 +6,7 @@ function Header() {
     <header className="header">
       <a href="/">logo</a>
       <nav>
-        <ul>
+        <ul className="navbar">
           <li>
             <a href="/">origins</a>
           </li>
