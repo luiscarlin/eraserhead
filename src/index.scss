@@ -30,7 +30,7 @@ body {
 
   h1 {
     margin: 0;
-    font-size: 7rem;
+    font-size: 3rem;
     letter-spacing: 0.25rem;
   }
 
@@ -42,7 +42,8 @@ body {
 
   a {
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
+    text-decoration: none;
     &:active,
     &:hover,
     &:focus {
