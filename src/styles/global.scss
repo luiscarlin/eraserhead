@@ -23,6 +23,7 @@ body,
 
 body {
   background: white;
+  text-rendering: optimizeLegibility;
 
   *:focus {
     outline: none;

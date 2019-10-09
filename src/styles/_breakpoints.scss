@@ -1,0 +1,5 @@
+$mobileOnly: 'screen and (max-width: 720px)';
+$tabletOnly: 'screen and (min-width: 721px) and (max-width: 1023px)';
+$desktopOnly: 'screen and (min-width: 1024px)';
+$notMobile: 'screen and (min-width: 721px)';
+$notDesktop: 'screen and (max-width: 1023px)';

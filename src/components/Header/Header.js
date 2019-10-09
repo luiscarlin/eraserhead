@@ -1,5 +1,6 @@
 import React from 'react'
 import './header.scss'
+import MobileMenu from '../MobileMenu'
 
 function Header() {
   return (
