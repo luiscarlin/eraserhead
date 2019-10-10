@@ -3,21 +3,34 @@ import './header.scss'
 import MobileMenu from '../MobileMenu'
 
 function Header() {
+  const menuIems = [
+    {
+      label: 'origins',
+      to: '/',
+    },
+    {
+      label: 'rules',
+      to: '/',
+    },
+    {
+      label: 'ranking',
+      to: '/',
+    },
+  ]
   return (
     <header className="header">
       <a href="/">logo</a>
-      <nav>
+      <nav className="not-mobile">
         <ul className="navbar">
-          <li>
-            <a href="/">origins</a>
-          </li>
-          <li>
-            <a href="/">rules</a>
-          </li>
-          <li>
-            <a href="/">ranking</a>
-          </li>
+          {menuIems.map(item => (
+            <li>
+              <a href={item.to}>{item.label}</a>
+            </li>
+          ))}
         </ul>
+      </nav>
+      <nav className="mobile-menu">
+        <MobileMenu />
       </nav>
     </header>
   )

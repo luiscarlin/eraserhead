@@ -1,5 +1,7 @@
+@import '../../styles/main.scss';
+
 .header {
-  background: black;
+  background: red;
   max-width: 140rem;
   margin: 0 auto;
   display: flex;
@@ -21,6 +23,24 @@
     }
     li:last-child {
       margin-right: 0;
+    }
+  }
+
+  @media #{$mobileOnly} {
+    .not-mobile {
+      display: none;
+    }
+    .mobile-menu {
+      display: flex;
+    }
+  }
+
+  @media #{$notMobile} {
+    .not-mobile {
+      display: flex;
+    }
+    .mobile-menu {
+      display: none;
     }
   }
 }
