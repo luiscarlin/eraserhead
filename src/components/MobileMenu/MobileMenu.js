@@ -9,8 +9,8 @@ function Burger() {
   return (
     <button className="burger">
       <div className="bar top open" />
-      <div className="bar middle open" />
-      <div className="bar bottom open" />
+      <div className="bar middle" />
+      <div className="bar bottom" />
     </button>
   )
 }
