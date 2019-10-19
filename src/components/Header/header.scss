@@ -1,7 +1,7 @@
 @import '../../styles/main.scss';
 
 .header {
-  background: red;
+  background: $background;
   max-width: 140rem;
   margin: 0 auto;
   display: flex;
@@ -10,6 +10,8 @@
   padding: 5rem;
 
   @media #{$mobileOnly} {
+    padding: 3rem;
+
     .not-mobile {
       display: none;
     }
@@ -35,7 +37,7 @@
 
       a {
         text-transform: uppercase;
-        color: white;
+        color: $onBackground;
         letter-spacing: 2px;
         font-size: 1.2rem;
       }
@@ -49,7 +51,7 @@
       margin-bottom: 3rem;
       a {
         text-transform: uppercase;
-        color: black;
+        color: $onSecondaryBackground;
         letter-spacing: 2px;
         font-size: 2rem;
       }

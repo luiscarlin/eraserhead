@@ -1,3 +1,5 @@
+@import '../../../../styles/main.scss';
+
 .hamburger {
   display: flex;
   background: transparent;
@@ -18,10 +20,10 @@
     width: 2.5rem;
     height: 0.2rem;
 
-    background: white;
+    background: $onBackground;
 
     &.open {
-      background: black;
+      background: $onSecondaryBackground;
     }
 
     border-radius: 10px;

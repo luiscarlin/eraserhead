@@ -1,9 +1,10 @@
 @import 'normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 html {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,7 +23,6 @@ body,
 }
 
 body {
-  background: white;
   text-rendering: optimizeLegibility;
 
   *:focus {
