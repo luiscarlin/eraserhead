@@ -37,10 +37,22 @@
         text-transform: uppercase;
         color: white;
         letter-spacing: 2px;
+        font-size: 1.2rem;
       }
     }
     li:last-child {
       margin-right: 0;
+    }
+  }
+  .mobile-menu {
+    li {
+      margin-bottom: 3rem;
+      a {
+        text-transform: uppercase;
+        color: black;
+        letter-spacing: 2px;
+        font-size: 2rem;
+      }
     }
   }
 }
