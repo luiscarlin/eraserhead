@@ -1,9 +1,10 @@
 @import 'normalize.css';
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 html {
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -22,8 +23,7 @@ body,
 }
 
 body {
-  transition: all 0.7s ease-in-out;
-  background: white;
+  text-rendering: optimizeLegibility;
 
   *:focus {
     outline: none;
@@ -31,7 +31,7 @@ body {
 
   h1 {
     margin: 0;
-    font-size: 7rem;
+    font-size: 3rem;
     letter-spacing: 0.25rem;
   }
 
@@ -41,14 +41,19 @@ body {
     font-weight: normal;
   }
 
-  input[type='text'] {
-    margin: 0;
-    font-size: 1.6rem;
-    font-weight: normal;
-    border: 0;
-  }
-
   a {
     cursor: pointer;
+    text-decoration: none;
+    &:active,
+    &:hover,
+    &:focus {
+      outline: none;
+    }
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
 }
