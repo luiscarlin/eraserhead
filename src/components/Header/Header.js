@@ -22,8 +22,8 @@ function Header() {
       <a href="/">logo</a>
       <nav className="not-mobile">
         <ul className="navbar">
-          {menuIems.map(item => (
-            <li>
+          {menuIems.map((item, index) => (
+            <li key={index}>
               <a href={item.to}>{item.label}</a>
             </li>
           ))}
