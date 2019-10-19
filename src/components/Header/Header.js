@@ -1,9 +1,24 @@
 import React from 'react'
+import CollapsibleDrawer from './CollapsibleDrawer'
 import './header.scss'
-import MobileMenu from './MobileMenu'
-import DesktopMenu from './DesktopMenu'
 
 function Header() {
+  return (
+    <header className="header">
+      <a href="/">logo</a>
+      <nav className="not-mobile">
+        <MenuItems className="desktop-menu" />
+      </nav>
+      <nav className="mobile">
+        <CollapsibleDrawer>
+          <MenuItems className="mobile-menu" />
+        </CollapsibleDrawer>
+      </nav>
+    </header>
+  )
+}
+
+const MenuItems = ({ className }) => {
   const menuItems = [
     {
       label: 'origins',
@@ -18,16 +33,15 @@ function Header() {
       to: '/',
     },
   ]
+
   return (
-    <header className="header">
-      <a href="/">logo</a>
-      <nav className="not-mobile">
-        <DesktopMenu menuItems={menuItems} />
-      </nav>
-      <nav className="mobile-menu">
-        <MobileMenu menuItems={menuItems} />
-      </nav>
-    </header>
+    <ul className={className}>
+      {menuItems.map((item, index) => (
+        <li key={index}>
+          <a href={item.to}>{item.label}</a>
+        </li>
+      ))}
+    </ul>
   )
 }
 
