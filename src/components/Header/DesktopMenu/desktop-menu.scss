@@ -1,0 +1,16 @@
+.desktop-menu {
+  display: flex;
+
+  li {
+    margin-right: 5rem;
+
+    a {
+      text-transform: uppercase;
+      color: white;
+      letter-spacing: 2px;
+    }
+  }
+  li:last-child {
+    margin-right: 0;
+  }
+}

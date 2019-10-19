@@ -1,4 +1,4 @@
-.burger {
+.hamburger {
   display: flex;
   background: transparent;
   flex-direction: column;
@@ -9,6 +9,10 @@
   border: none;
   cursor: pointer;
   padding: 0;
+
+  &:focus {
+    outline: none;
+  }
 
   .bar {
     width: 4rem;

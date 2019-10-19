@@ -1,9 +1,10 @@
 import React from 'react'
 import './header.scss'
-import MobileMenu from '../MobileMenu'
+import MobileMenu from './MobileMenu'
+import DesktopMenu from './DesktopMenu'
 
 function Header() {
-  const menuIems = [
+  const menuItems = [
     {
       label: 'origins',
       to: '/',
@@ -21,16 +22,10 @@ function Header() {
     <header className="header">
       <a href="/">logo</a>
       <nav className="not-mobile">
-        <ul className="navbar">
-          {menuIems.map((item, index) => (
-            <li key={index}>
-              <a href={item.to}>{item.label}</a>
-            </li>
-          ))}
-        </ul>
+        <DesktopMenu menuItems={menuItems} />
       </nav>
       <nav className="mobile-menu">
-        <MobileMenu />
+        <MobileMenu menuItems={menuItems} />
       </nav>
     </header>
   )

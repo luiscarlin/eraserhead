@@ -1,13 +1,11 @@
-import React, { useState } from 'react'
-import './burger.scss'
+import React from 'react'
+import './hamburger.scss'
 
-function Burger() {
-  const [isExpanded, setExpanded] = useState(false)
-
+function Hamburger({ isExpanded, onClickHandler }) {
   const openClass = isExpanded ? 'open' : ''
 
   return (
-    <button className="burger" onClick={() => setExpanded(!isExpanded)}>
+    <button className="hamburger" onClick={onClickHandler}>
       <div className={`bar top ${openClass}`} />
       <div className={`bar middle ${openClass}`} />
       <div className={`bar bottom ${openClass}`} />
@@ -15,4 +13,4 @@ function Burger() {
   )
 }
 
-export default Burger
+export default Hamburger
