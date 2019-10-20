@@ -1,11 +1,11 @@
 import React from 'react'
-import Header from './components/Header'
+import Hero from './components/sections/Hero'
 import './app.scss'
 
 function App() {
   return (
     <div id="wrapper">
-      <Header />
+      <Hero />
     </div>
   )
 }
