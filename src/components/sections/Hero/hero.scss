@@ -1,0 +1,11 @@
+@import '../../../styles/main.scss';
+
+.hero {
+  height: 100%;
+  background: $background;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../../../assets/target-person.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
