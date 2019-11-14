@@ -11,9 +11,7 @@
     height: 100%;
   }
   .title {
-    color: white;
-  }
-  .lazy-background {
-    color: #191919;
+    color: $onBackground;
+    font-size: 10rem;
   }
 }

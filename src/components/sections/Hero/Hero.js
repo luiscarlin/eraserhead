@@ -17,7 +17,7 @@ function Hero() {
         opacity={0.3}
         transitionDuration={500}
       >
-        <h1 className="title">EraserHead</h1>
+        <p className="title">EraserHead</p>
       </LazyHero>
     </section>
   )
