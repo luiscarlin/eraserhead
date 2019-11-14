@@ -10,7 +10,13 @@ function Hero() {
       <div className="header-container">
         <Header />
       </div>
-      <LazyHero imageSrc={background} color="black" minHeight={'100%'}>
+      <LazyHero
+        imageSrc={background}
+        color="#191919"
+        minHeight={'100%'}
+        opacity={0.3}
+        transitionDuration={500}
+      >
         <h1 className="title">EraserHead</h1>
       </LazyHero>
     </section>
