@@ -14,8 +14,9 @@ function Hero() {
         imageSrc={background}
         color="#191919"
         minHeight={'100%'}
-        opacity={0.3}
+        opacity={0.6}
         transitionDuration={500}
+        isCentered={true}
       >
         <p className="title">EraserHead</p>
       </LazyHero>

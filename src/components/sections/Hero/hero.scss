@@ -10,8 +10,19 @@
     z-index: 1;
     height: 100%;
   }
+
   .title {
     color: $onBackground;
-    font-size: 10rem;
+    font-size: 12rem;
+
+    font-family: 'Noto Serif';
+    letter-spacing: 1rem;
+
+    @media #{$tabletOnly} {
+      font-size: 10rem;
+    }
+    @media #{$mobileOnly} {
+      font-size: 5rem;
+    }
   }
 }
