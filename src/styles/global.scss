@@ -58,3 +58,12 @@ body {
     list-style-type: none;
   }
 }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
