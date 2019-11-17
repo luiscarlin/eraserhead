@@ -3,7 +3,9 @@
 .hero {
   height: 100%;
   background: $background;
-  animation: fadein ease-in 1.5s;
+  animation-name: fadein;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
 
   .header-container {
     position: absolute;
